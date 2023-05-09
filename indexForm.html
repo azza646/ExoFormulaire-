@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <title>ExoFormulaire</title>
+    </head>
+
+    <body>
+        <h1>Formulaire</h1>
+
+        <p>
+            * Ces zones sont obligatoires
+        </p>
+        <section>
+            <form action ="correction.html"  method="get">
+        <fieldset>
+            <legend> Vos coordonnées</legend>
+                <label for="nom"> Votre nom* </label>
+                <input type="text" name="nom" id="nom"><br/>
+
+                <label for="prenom"> Votre prenom* </label>
+                <input type="text" name="prenom" id="prenom"><br/>
+
+            <p>
+                Sexe*:     
+                <label for="checkboxOneInput"></label>
+                <input type="checkbox" value="1" id="checkboxOneInput"/>
+                Feminin 
+
+                <label for="checkboxOneInput"></label>
+                <input type="checkbox" value="1" id="checkboxOneInput"/>
+                Masculin 
+    
+            </p>
+
+
+                <label for="Date_de_naissance">Date de naissance:</label>
+                <input type="date" id="Date_de_naissance" name="Date_de_naissance"
+                value="jj/mm/aaaa" min="01/01/1950"  max="31/12/2000"> <br/>
+
+
+                <label for="Code_postale"> Code postale* </label>
+                <input type="text" name="Code_postale" id="Code_postale"><br/>
+
+                <label for="Adresse"> Adresse </label>
+                <input type="text" name="Adresse" id="Adresse"><br/>
+
+                <label for="Ville"> Ville </label>
+                <input type="text" name="Ville" id="Ville"><br/>
+
+                <label for="Email"> Email* </label>
+                <input type="text" name="Email" id="Email" autofocus required><br/>
+
+        </fieldset>    
+        <fieldset> 
+            <legend> Votre demande </legend>
+
+                <select name="Sujet" id="selectionner_sujet">
+                    <option value=""> Veuillez selectionner un sujet </option>
+                    <option value="Mes_commandes"> Mes commandes</option>
+                    <option value="Question_sur_un_produit"> Question sur un produit</option>
+                    <option value="Reclamation"> Reclamation</option>
+                    <option value="Autres">Autres</option>
+                </select> <br/>
+
+                <label for="Votre_question"> Votre question* </label>
+                <input type="text" name="Votre_question" id="Votre_question"><br/>
+
+                
+        </fieldset>  
+                <p>
+                    <label for="checkboxOneInput"></label>
+                    <input type="checkbox" value="1" id="checkboxOneInput"/>
+                    *J'accepte le traitement informatique de ce formulaire 
+                </p>
+
+            <input type="submit" value="Envoyer" />   
+            <input type="submit" value="Annuler" />   
+            </form>
+
+        </section>
+
+        
+    </body>
+</html>
